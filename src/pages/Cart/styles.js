@@ -14,13 +14,3 @@ export const ContentContainer = styled.View`
 export const Divisor = styled.View`
     height:10px;
 `
-export const Button = styled.TouchableOpacity`
-  width: 100%;
-  padding: 16px 20px;
-  background-color: #FFCE00;
-  border-radius: 12px;
-  flex-direction: row;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
-`

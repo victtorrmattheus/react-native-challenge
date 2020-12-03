@@ -1,11 +1,12 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import Home from './src/pages/Home'
+import Routes from './src/Routes'
 import { StatusBar } from 'react-native'
 
 export default function App() {
   return (
     <>
-      <Home />
+      <Routes />
       <StatusBar barStyle='light-content' backgroundColor='#2c3e50' />
     </>
   );
