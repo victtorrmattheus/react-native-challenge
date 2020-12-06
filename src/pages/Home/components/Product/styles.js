@@ -38,3 +38,6 @@ export const Price = styled.Text`
     color: #16a085;
     flex: 1;
 `
+export const Divisor = styled.View`
+    height:10px;
+`

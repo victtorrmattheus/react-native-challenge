@@ -24,3 +24,5 @@ export const Icon_Container = styled.View`
 export const Icon = styled.View`
     flex: 1;
 `
+export const  Icon_Container_Touch = styled.TouchableOpacity`
+`

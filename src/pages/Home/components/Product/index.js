@@ -1,29 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, Content, Title, Score, BContainer, Image, Price } from './styles'
 import { AntDesign, Feather } from '@expo/vector-icons';
-import Foto from '../../../../../assets/call-of-duty-infinite-warfare.png'
+import Foto from '../../../../../assets/mortal-kombat-xl.png'
+import { TouchableHighlight, TouchableOpacity } from 'react-native'
+//import Path from 'path'
 
-function Product() {
 
+
+function Product({ product, onPress }) {
+
+
+
+    //const teste = `../../../../../assets/${product.image}`
+
+    //console.log(typeof(product.image))
     return (
         <Container>
             <Image source={Foto} resizeMode='cover' />
+
             <Content>
                 <Title numberOfLines={2} >
-                    Call Of Duty - Infinite Warfare
+                    {product.name}
                 </Title>
                 <BContainer>
                     <Feather name="star" size={18} color="#e67e22" />
                     <Score>
-                        80
+                        {product.score}
                     </Score>
                 </BContainer>
                 <BContainer>
                     <Price>
-                        R$ 49.99
+                        R$ {product.price}
                     </Price>
-                    <AntDesign name="shoppingcart" size={24} color="#16a085" />
-
+                    <TouchableOpacity onPress={() => {onPress()}} >
+                        <AntDesign name="shoppingcart" size={24} color="#16a085" />
+                    </TouchableOpacity>
                 </BContainer>
 
             </Content>
